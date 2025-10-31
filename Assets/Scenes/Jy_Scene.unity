@@ -259,7 +259,7 @@ MonoBehaviour:
   maxDistnace: 5
   launchToPoint: 1
   launchType: 1
-  launchSpeed: 3
+  launchSpeed: 1.5
   autoConfigureDistance: 0
   targetDistance: 3
   targetFrequncy: 1
@@ -897,7 +897,7 @@ MonoBehaviour:
   unparentGameObject: 0
   knobNormalColor: {r: 1, g: 1, b: 1, a: 1}
   knobHoverColor: {r: 0.51613927, g: 1, b: 0.2783019, a: 1}
-  knobConnectedColor: {r: 0, g: 0.38679248, b: 0.05789091, a: 1}
+  knobConnectedColor: {r: 1, g: 0.20588, b: 0.1462264, a: 1}
 --- !u!4 &1287789703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7811292955251505840, guid: 76fa90bc60f6ea7429275e2192bb4326, type: 3}
