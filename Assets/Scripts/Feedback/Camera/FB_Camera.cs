@@ -8,6 +8,7 @@ public class FB_Camera : FeedbackBase
 {
     [HideInInspector]
     public CinemachineVirtualCamera cinemachineVirtualCamera;
+    public Camera defaultCamera;
 
     public FB_Camera(FB_Camera camera) : base(camera)
     {
@@ -18,8 +19,9 @@ public class FB_Camera : FeedbackBase
     {
         base.OnFeedbackActiavte();
 
-        if(!cinemachineVirtualCamera)
+        if(!cinemachineVirtualCamera  && !defaultCamera)
         {
+
             Debug.Log("must assigen cinemachineVirtualCamera first");
             return;
         }
@@ -42,8 +44,13 @@ public class FB_Camera : FeedbackBase
 
         //when cam ref is not set get it from manager
         foreach(Component item in comp)
+        {
+            
             if(item is CinemachineVirtualCamera)
                 cinemachineVirtualCamera=(CinemachineVirtualCamera)item;
+            if(item is Camera)
+                defaultCamera = (Camera)item;
+        }
             
     }
 }

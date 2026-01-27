@@ -45,6 +45,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  duration: 0.5
+  duration: 0.1
   cinemachineVirtualCamera: {fileID: 0}
-  zoomedFieldofView: 20
+  defaultCamera: {fileID: 0}
+  defaultFieldofView: 25
+  zoomedFieldofView: 24.5

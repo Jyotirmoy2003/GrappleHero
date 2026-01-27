@@ -10,6 +10,7 @@ using UnityEngine.Rendering;
 public class FeedBackManager : MonoBehaviour
 {
      public CinemachineVirtualCamera camRef;
+     public Camera defalutCamera;
      public Transform targetTramform;
 
     [Space]
@@ -36,7 +37,7 @@ public class FeedBackManager : MonoBehaviour
     void Start()
     {
         CopyList();
-
+        if(defalutCamera) compList.Add(defalutCamera);
         if(camRef) compList.Add(camRef);
         if(targetTramform) compList.Add(targetTramform);
         else compList.Add(transform);

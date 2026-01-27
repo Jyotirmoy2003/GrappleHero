@@ -9,6 +9,7 @@ public class Coin : MonoBehaviour
         {
             Debug.Log("Collison Wit player");
             GameAssets.Instance.OnCoinCollectedEvent.Raise(this,amount);
+            FeelManager.Instance.LitZoom(); //Feel
             Destroy(this.gameObject);
         }
     }
