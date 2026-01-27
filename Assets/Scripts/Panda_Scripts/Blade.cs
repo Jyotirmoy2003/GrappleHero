@@ -53,6 +53,7 @@ public class Blade : MonoBehaviour
             if (Player == null)
             {
                 GameObject newObj = Instantiate(replacementPrefab, position, rotation, parent);
+
                 Player = newObj;
                 Debug.Log($"Replaced {Player.name} with {newObj.name} under parent {parent?.name ?? "Scene Root"}");
                 gm = FindFirstObjectByType<GrapplePointManager>();
